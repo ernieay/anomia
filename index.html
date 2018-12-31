@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" ng-app="codenameApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Codenames</title>
+  <link rel="icon" href="https://s3-ap-southeast-2.amazonaws.com/codenames/favicon.ico">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+
+<body ng-controller="GameController">
+  <div class="container">
+    <div class="row">
+      <div class="cardText">
+        Text
+      </div>
+    </div>
+    <div class="row">
+      <div class="cardSymbol">
+        Symbol
+      </div>
+    </div>
+    <div class="row">
+      <div class="cardText">
+        Text
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="classButton " ng-click="amMastermind()" ng-hide="mastermind||spy">Mastermind</button>
+      </div>
+      <div class="col">
+        
+      </div>
+      <div class="col">
+        <button class="classButton" ng-click="amSpy()" ng-hide="mastermind||spy">Spy</button>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
