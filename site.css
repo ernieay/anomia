@@ -1,9 +1,30 @@
 
 .cardText{
-  min-height:50px;
+  min-height:170px;
+  font-size: 60px;
+  padding: 40px;
 }
 
 
 .cardSymbol{
-  min-height:150px;
+  min-height:300px;
+}
+
+
+.classButton{
+  border-radius: 39px; 
+  -moz-border-radius: 39px; 
+  -webkit-border-radius: 39px; 
+  border: 2px solid #000; 
+  font-size: 30px;
+  padding: 20px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scoreBox{  
+  font-size: 30px;
+  padding: 20px;
 }
