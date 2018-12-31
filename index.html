@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Codenames</title>
+  <title>Anomia</title>
   <link rel="icon" href="https://s3-ap-southeast-2.amazonaws.com/codenames/favicon.ico">
 
   <!-- Bootstrap core CSS -->
@@ -15,30 +15,35 @@
 
 <body ng-controller="GameController">
   <div class="container">
-    <div class="row">
+    <div class="row" ng-click="addCard()">
       <div class="cardText">
-        Text
+        {{pile.length > 0 ? pile[pile.length - 1].word : ""}}
       </div>
     </div>
-    <div class="row">
-      <div class="cardSymbol">
-        Symbol
-      </div>
+    <div class="row" ng-click="addCard()">
+      <img src="0.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 0"/>
+      <img src="1.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 1"/>
+      <img src="2.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 2"/>
+      <img src="3.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 3"/>
+      <img src="4.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 4"/>
+      <img src="5.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 5"/>
+      <img src="6.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 6"/>
     </div>
-    <div class="row">
+    <div class="row" ng-click="addCard()">
       <div class="cardText">
-        Text
+          {{pile.length > 0 ? pile[pile.length - 1].word : ""}}
       </div>
     </div>
+
     <div class="row">
       <div class="col">
-        <button class="classButton " ng-click="amMastermind()" ng-hide="mastermind||spy">Mastermind</button>
+        <button class="classButton" ng-click="addScore()" >+1</button>
       </div>
       <div class="col">
-        
+        {{score}}
       </div>
       <div class="col">
-        <button class="classButton" ng-click="amSpy()" ng-hide="mastermind||spy">Spy</button>
+        <button class="classButton" ng-click="removeCard()" >Remove</button>
       </div>
 
     </div>
