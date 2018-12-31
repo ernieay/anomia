@@ -1,4 +1,9 @@
 
 .cardText{
-  min-height:50px
+  min-height:50px;
+}
+
+
+.cardSymbol{
+  min-height:150px;
 }

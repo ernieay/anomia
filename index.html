@@ -16,34 +16,36 @@
 <body ng-controller="GameController">
   <div class="container">
     <div class="row" ng-click="addCard()">
-      <div class="cardText">
+      <div class="col cardText text-center">
         {{pile.length > 0 ? pile[pile.length - 1].word : ""}}
       </div>
     </div>
     <div class="row" ng-click="addCard()">
-      <img src="0.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 0"/>
-      <img src="1.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 1"/>
-      <img src="2.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 2"/>
-      <img src="3.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 3"/>
-      <img src="4.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 4"/>
-      <img src="5.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 5"/>
-      <img src="6.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 6"/>
+      <div class="col text-center cardSymbol">
+        <img src="0.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 0" />
+        <img src="1.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 1" />
+        <img src="2.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 2" />
+        <img src="3.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 3" />
+        <img src="4.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 4" />
+        <img src="5.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 5" />
+        <img src="6.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 6" />
+      </div>
     </div>
     <div class="row" ng-click="addCard()">
-      <div class="cardText">
-          {{pile.length > 0 ? pile[pile.length - 1].word : ""}}
+      <div class="cardText col text-center">
+        {{pile.length > 0 ? pile[pile.length - 1].word : ""}}
       </div>
     </div>
 
     <div class="row">
-      <div class="col">
-        <button class="classButton" ng-click="addScore()" >+1</button>
+      <div class="col text-center">
+        <button class="classButton" ng-click="addScore()">+1</button>
       </div>
-      <div class="col">
+      <div class="col text-center">
         {{score}}
       </div>
-      <div class="col">
-        <button class="classButton" ng-click="removeCard()" >Remove</button>
+      <div class="col text-center">
+        <button class="classButton" ng-click="removeCard()">Remove</button>
       </div>
 
     </div>
