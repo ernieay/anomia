@@ -36,20 +36,22 @@
         {{pile.length > 0 ? pile[pile.length - 1].word : ""}}
       </div>
     </div>
-
-    <div class="row">
-      <div class="col float-left">
-        <button class="classButton" ng-click="addScore()">+1</button>
-      </div>
-      <div class="col text-center scoreBox">
-        {{score}}
-      </div>
-      <div class="col float-right">
-        <button class="classButton" ng-click="removeCard()">Remove</button>
-      </div>
-
-    </div>
+    
+    
   </div>
+  <div class="row navbar fixed-bottom">
+    <div class="col float-left">
+      <button class="classButton" ng-click="addScore()">+1</button>
+    </div>
+    <div class="col text-center scoreBox">
+      {{score}}
+    </div>
+    <div class="col float-right">
+      <button class="classButton" ng-click="removeCard()">Remove</button>
+    </div>
+
+  </div>
+  
 </body>
 
 </html>
