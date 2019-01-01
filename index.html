@@ -32,13 +32,12 @@
       </div>
     </div>
     <div class="row" ng-click="addCard()">
-      <div class="cardText col text-center">
+      <div class="cardText col text-center txtUpsideDown">
         {{pile.length > 0 ? pile[pile.length - 1].word : ""}}
       </div>
     </div>
-    
-    
   </div>
+  
   <div class="row navbar fixed-bottom">
     <div class="col float-left">
       <button class="classButton" ng-click="addScore()">+1</button>
@@ -51,7 +50,7 @@
     </div>
 
   </div>
-  
+
 </body>
 
 </html>
