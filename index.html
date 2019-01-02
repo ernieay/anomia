@@ -22,6 +22,7 @@
     </div>
     <div class="row align-items-center" ng-click="addCard()">
       <div class="col text-center cardSymbol">
+        <img src="touch.png" ng-show="pile.length == 0" />
         <img src="0.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 0" />
         <img src="1.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 1" />
         <img src="2.png" ng-show="pile.length > 0 && pile[pile.length - 1].symbol == 2" />
